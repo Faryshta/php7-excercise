@@ -8,6 +8,10 @@ $limit = $_GET['limit'] ?? 4000000;
 
 $db = Connection::createPDO('php7_excercise', 'root', 'root');
 
+/**
+ * Don't edit anything below this line
+ */
+
 $fibonacciModel = new FibonacciModel($db);
 
 $lastFibonacci = $fibonacciModel->getBiggest();
